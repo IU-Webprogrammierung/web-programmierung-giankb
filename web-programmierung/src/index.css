@@ -1,68 +1,76 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/*
+Desktop Extra Large (larger than 1440px):
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+Title (h1): 36px - 48px
+Body text (body): 22px
+p text (p): 22px
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+Desktop Large (1200px - 1440px):
+Title (h1): 30px - 36px
+Body text (body): 16px - 18px
+p text (p): 14px - 16px
+
+Desktop Medium (992px - 1200px):
+Title (h1): 26px - 30px
+Body text (body): 18px
+p text (p): 18px
+
+Desktop Small (768px - 991px):
+Title (h1): 24px - 26px
+Body text(body): 14px
+p text (p): 13px - 14px
+
+Desktop Very Small (smaller than 768px):
+Title (h1): 22px - 24px
+Body text (body): 13px - 14px
+p text (p): 12px - 13px
+
+MAIN COLOR
+#bf9f88
+
+TINTS
+1: #c5a994
+2: #ccb2a0
+3: #d2bcac
+4: #d9c5b8
+5: #dfcfc4
+
+SHADES
+1: #ac8f7a
+2: #997f6d
+3: #866f5f
+4: #735f52
+5: #605044
+
+
+
+Background COLOR
+#0b120f
+
+TINTS
+1: #232a27
+2: #3c413f
+3: #545957
+4: #6d716f
+5: #858987
+
+SHADES
+1: #0a100e
+2: #090e0c
+3: #080d0b
+4: #070b09
+5: #060908
+
+*/
+
+* {
+    font-family: "Exo", sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+    background-color: #060302;
 }
