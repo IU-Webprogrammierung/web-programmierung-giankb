@@ -1,10 +1,10 @@
 import Navigation from "../ui/Navigation.jsx";
 
-export default function Home () {
+export default function Saga () {
     return (
         <>
             <Navigation></Navigation>
-            <p>Home</p>
+            <p>Saga</p>
         </>
     )
 }

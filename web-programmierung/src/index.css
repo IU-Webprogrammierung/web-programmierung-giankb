@@ -27,26 +27,26 @@ Body text (body): 13px - 14px
 p text (p): 12px - 13px
 
 MAIN COLOR
-#bf9f88
+#010917
 
 TINTS
-1: #c5a994
-2: #ccb2a0
-3: #d2bcac
-4: #d9c5b8
-5: #dfcfc4
+1: #1a2e4e
+2: #344561
+3: #4d5d75
+4: #677489
+5: #808b9d
 
 SHADES
-1: #ac8f7a
-2: #997f6d
-3: #866f5f
-4: #735f52
-5: #605044
+1: #011534
+2: #01122e
+3: #011029
+4: #010e23
+5: #010c1d
 
 
 
 Background COLOR
-#0b120f
+#000207
 
 TINTS
 1: #232a27
@@ -72,5 +72,66 @@ SHADES
 }
 
 body {
-    background-color: #060302;
+    background-color: #000207;
+    overflow: hidden;
+}
+
+.hyperspace {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 99;
+    transition: opacity 0.5s;
+}
+
+/* Linee di velocità */
+.hyperspace::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+            white 0px,
+            white 2px,
+            transparent 2px,
+            transparent 10px
+    );
+    animation: warp 0.3s linear infinite;
+    transform: scaleY(0);
+    z-index: 9999;
+}
+
+@keyframes warp {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(5);
+    }
+}
+
+.hyperspace.active {
+    opacity: 1;
+}
+
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.32);
+    pointer-events: none;
+}
+
+#hyperspace-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+    background: #000207;
 }
