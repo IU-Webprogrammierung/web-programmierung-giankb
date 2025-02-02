@@ -1,0 +1,17 @@
+.hero-section {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-title{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+
+
+
