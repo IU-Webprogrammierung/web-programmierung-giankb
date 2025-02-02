@@ -66,11 +66,15 @@ SHADES
 
 
 * {
-    font-family: 'Star Wars', sans-serif;
+    font-family: sans-serif;
     color: whitesmoke;
     margin: 0;
     padding: 0;
     scrollbar-color: #ffe81f #000207;
+}
+
+h1 {
+    font-family: 'Star Wars', sans-serif;
 }
 
 ::-webkit-scrollbar {
