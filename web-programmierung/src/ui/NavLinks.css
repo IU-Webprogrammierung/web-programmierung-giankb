@@ -25,7 +25,6 @@
     position: relative;
     font-size: 24px;
     transition: all 0.5s ease;
-    text-shadow: 1px 1px 8px whitesmoke;
 }
 
 .nav_link::after {

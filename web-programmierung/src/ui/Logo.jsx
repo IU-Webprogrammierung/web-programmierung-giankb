@@ -9,7 +9,7 @@ export default function Logo () {
     return (
         <div className="logo-container">
             <Link to={"/"} onClick={(e) => handleClick(e, "/")}>
-                <img src="/logo.svg" alt="My Page logo" className="logo"/>
+                <img src="/logo.svg" alt="My Page logo" className="logo" width="600" height="400"/>
             </Link>
         </div>
     )

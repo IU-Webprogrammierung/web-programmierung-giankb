@@ -27,21 +27,21 @@ Body text (body): 13px - 14px
 p text (p): 12px - 13px
 
 MAIN COLOR
-#010917
+#ffe81f
 
 TINTS
-1: #1a2e4e
-2: #344561
-3: #4d5d75
-4: #677489
-5: #808b9d
+1: #ffea35
+2: #ffed4c
+3: #ffef62
+4: #fff179
+5: #fff48f
 
 SHADES
-1: #011534
-2: #01122e
-3: #011029
-4: #010e23
-5: #010c1d
+1: #e6d11c
+2: #ccba19
+3: #b3a216
+4: #998b13
+5: #807410
 
 
 
@@ -49,31 +49,55 @@ Background COLOR
 #000207
 
 TINTS
-1: #232a27
-2: #3c413f
-3: #545957
-4: #6d716f
-5: #858987
+1: #
+2: #
+3: #
+4: #
+5: #
 
 SHADES
-1: #0a100e
-2: #090e0c
-3: #080d0b
-4: #070b09
-5: #060908
+1: #
+2: #
+3: #
+4: #
+5: #
 
 */
 
+
 * {
-    font-family: "Exo", sans-serif;
+    font-family: 'Star Wars', sans-serif;
     color: whitesmoke;
     margin: 0;
     padding: 0;
+    scrollbar-color: #ffe81f #000207;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000207;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffe81f;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #000207;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .hyperspace {
@@ -83,11 +107,10 @@ body {
     width: 100%;
     height: 100vh;
     pointer-events: none;
-    z-index: 99;
+    z-index: 9;
     transition: opacity 0.5s;
 }
 
-/* Linee di velocità */
 .hyperspace::before {
     content: "";
     position: absolute;
@@ -101,7 +124,7 @@ body {
     );
     animation: warp 0.3s linear infinite;
     transform: scaleY(0);
-    z-index: 9999;
+    z-index: 9;
 }
 
 @keyframes warp {
@@ -131,7 +154,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: -1;
     pointer-events: none;
     background: #000207;
 }
