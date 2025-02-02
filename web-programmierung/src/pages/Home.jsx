@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection.jsx";
 import "./Home.css"
 import Box from "../components/Box.jsx";
 import KeySection from "../components/KeySection.jsx";
+import Footer from "../ui/Footer.jsx";
 
 export default function Home () {
     return (
@@ -14,6 +15,7 @@ export default function Home () {
                 <Box></Box>
                 <KeySection></KeySection>
             </main>
+            <Footer></Footer>
         </>
     )
 }
