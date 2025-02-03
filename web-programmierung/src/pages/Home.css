@@ -11,3 +11,19 @@
     justify-content: center;
     gap: 100px;
 }
+
+.card-component-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.card-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 100px;
+}
