@@ -5,10 +5,12 @@ import Box from "../components/Box.jsx";
 import KeySection from "../components/KeySection.jsx";
 import Footer from "../ui/Footer.jsx";
 import Card from "../components/Card.jsx";
+import ScrollToTop from "../ui/ScrollTop.jsx";
 
 export default function Home () {
     return (
         <>
+            <ScrollToTop />
             <Navigation></Navigation>
             <HeroSection title={"A long time ago, in a galaxy far, far away.."} small={"Welcome to the star wars not official page"}></HeroSection>
             <main className="main">
