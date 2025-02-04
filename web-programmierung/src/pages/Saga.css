@@ -1,0 +1,26 @@
+.saga-title{
+    font-size: 3.5rem;
+}
+
+.main{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.carousel-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.carousel-section-container h2 {
+    font-family: 'Star Wars', sans-serif;
+}
