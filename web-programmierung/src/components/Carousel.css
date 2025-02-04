@@ -1,0 +1,79 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.carousel {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-item {
+    min-width: 30%;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.carousel-img-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.carousel-button:hover,
+.carousel-button:active,
+.carousel-button:focus{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+}
+
+
+.carousel-button span{
+    margin-top: -5px;
+    color: inherit;
+}
+
+.left span{
+    margin-right: 2px;
+    color: inherit;
+}
