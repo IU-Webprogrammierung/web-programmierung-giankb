@@ -21,7 +21,7 @@ export default function Footer(){
                 </div>
 
                 <div className="impressum">
-                    <h4>Impressum</h4>
+                    <p>Impressum</p>
                     <p>Owner: Star Wars Fan Site</p>
                     <p>Address: Galaxy Avenue 42, 00100 Coruscant</p>
                     <p>Email: contact@starwarsfansite.com</p>
