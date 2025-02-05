@@ -2,7 +2,7 @@ import "./KeySection.css"
 export default function KeySection (){
     return (
         <section className="key-section">
-            <h2>Main elements</h2>
+            <h2>main elements</h2>
             <div className="card">
                 <h3>The Force</h3>
                 <p>A mystical energy field that connects all living things, giving Jedi and Sith incredible

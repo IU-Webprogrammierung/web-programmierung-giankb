@@ -10,13 +10,11 @@
 
 .key-section h2 {
     grid-column: 1 / -1;
-    font-size: 2rem;
     font-weight: 800;
     text-align: center;
     margin-bottom: 1.5rem;
-    text-transform: uppercase;
     letter-spacing: 2px;
-    color: #ffe81f;
+    font-family: 'Star Wars', sans-serif;
 }
 
 .card {

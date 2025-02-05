@@ -12,6 +12,10 @@
     gap: 100px;
 }
 
+.h2-title{
+    font-family: 'Star Wars', sans-serif;
+}
+
 .card-component-container{
     display: flex;
     align-items: center;

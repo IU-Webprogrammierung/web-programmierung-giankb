@@ -6,6 +6,8 @@ import KeySection from "../components/KeySection.jsx";
 import Footer from "../ui/Footer.jsx";
 import Card from "../components/Card.jsx";
 import ScrollToTop from "../ui/ScrollTop.jsx";
+import {starWarsCharacters} from "../services/CONSTANTS.js";
+import FilmSection from "../components/FilmSection.jsx";
 
 export default function Home () {
     return (
@@ -17,8 +19,12 @@ export default function Home () {
                 <h1 className="home-title">What is star wars</h1>
                 <Box></Box>
                 <KeySection></KeySection>
+                <h2 className="h2-title">main characters</h2>
+                {starWarsCharacters.map((film, index) => (
+                    <FilmSection key={index} film={film} />
+                ))}
                 <section className="card-component-container" >
-                    <h1>The content</h1>
+                    <h2 className="h2-title">the content</h2>
                     <div className="card-section-container">
                         <Card imgSrc="/saga.webp" buttonContent="Saga" link="/saga"></Card>
                         <Card imgSrc="/animation.webp" buttonContent="Animations" link="/animations" ></Card>
