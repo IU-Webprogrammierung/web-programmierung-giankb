@@ -1,12 +1,19 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Starfield() {
     const stars = useRef([]);
     const speed = useRef(0.1);
     const canvasRef = useRef(null);
+    const [numberStars, setNumberStars] = useState(getNumberStars());
 
     window.hyperspaceSpeed = speed;
     window.hyperspaceCanvas = canvasRef;
+
+    function getNumberStars() {
+        if (window.innerWidth > 1200) return 4500;
+        if (window.innerWidth > 800) return 1500;
+        return 800;
+    }
 
     useEffect(() => {
         const canvas = document.createElement("canvas");
@@ -18,7 +25,7 @@ export default function Starfield() {
         canvas.style.left = "0";
         canvas.style.width = "100%";
         canvas.style.height = "100%";
-        canvas.style.zIndex = "-1"; // Di default sta in background
+        canvas.style.zIndex = "-1";
         canvas.style.pointerEvents = "none";
         canvas.style.background = "#000207";
         document.body.appendChild(canvas);
@@ -26,14 +33,18 @@ export default function Starfield() {
 
         canvasRef.current = canvas;
 
-        const numStars = 3500;
-        for (let i = 0; i < numStars; i++) {
-            stars.current.push({
-                x: Math.random() * canvas.width,
-                y: Math.random() * canvas.height,
-                z: Math.random() * canvas.width,
-            });
+        function generateStars() {
+            stars.current = [];
+            for (let i = 0; i < numberStars; i++) {
+                stars.current.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    z: Math.random() * canvas.width,
+                });
+            }
         }
+
+        generateStars();
 
         function animate() {
             ctx.fillStyle = "#000207";
@@ -63,10 +74,19 @@ export default function Starfield() {
 
         animate();
 
+        function handleResize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            setNumberStars(getNumberStars());
+        }
+
+        window.addEventListener("resize", handleResize);
+
         return () => {
             canvas.remove();
+            window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [numberStars]);
 
     return null;
 }
