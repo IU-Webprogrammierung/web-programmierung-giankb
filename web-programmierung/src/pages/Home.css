@@ -1,17 +1,3 @@
-.home-title{
-    font-size: 3.5rem;
-}
-
-.main{
-    width: 80%;
-    margin: 50px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-}
-
 .h2-title{
     font-family: 'Star Wars', sans-serif;
 }
@@ -30,4 +16,24 @@
     justify-content: center;
     gap: 10rem;
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .card-component-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .card-section-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5rem;
+        margin-bottom: 100px;
+    }
 }

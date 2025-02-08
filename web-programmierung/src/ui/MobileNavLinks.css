@@ -9,7 +9,7 @@
     opacity: 0;
     position: absolute;
     padding: 20px 3rem 20px 2rem;
-    border-radius: 20px;
+    border-radius: 5px;
     top: 0;
     right: 0;
     display: flex;
@@ -30,7 +30,7 @@
 
 .active {
     opacity: 1;
-    top: 3.4rem;
+    top: 4.9rem;
     right: 0;
     transition: all 0.5s ease;
     pointer-events: all;

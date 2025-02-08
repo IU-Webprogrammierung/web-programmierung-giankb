@@ -77,3 +77,52 @@
     font-weight: 600;
     color: #ffffff;
 }
+
+@media screen and (max-width: 1200px) {
+
+    .curiosity-section-left {
+        margin-bottom: 60px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: static;
+    }
+
+    .curiosity-image-left {
+        margin: 0;
+    }
+
+    .text-left {
+        position: static;
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .text-left p {
+        text-align: justify;
+    }
+
+    .curiosity-section-right {
+        margin-bottom: 60px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: static;
+    }
+
+    .curiosity-image-right {
+        margin: 0;
+    }
+
+    .text-right {
+        position: static;
+        margin-top: -50px;
+        text-align: center;
+    }
+
+    .text-right p {
+        text-align: justify;
+    }
+
+
+}

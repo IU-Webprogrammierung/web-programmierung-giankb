@@ -3,6 +3,7 @@
     top: 5px;
     height: 70px;
     left: 50px;
+    z-index: 99;
 }
 
 .logo{

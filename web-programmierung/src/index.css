@@ -162,3 +162,37 @@ body {
     pointer-events: none;
     background: #000207;
 }
+
+
+/* Common css */
+
+.main{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main-title{
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .main {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .main-title{
+        font-size: 2.5rem;
+    }
+}

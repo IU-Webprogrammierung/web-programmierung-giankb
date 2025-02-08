@@ -36,3 +36,24 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
+
+@media screen and (max-width: 1200px) {
+    .box-container {
+        gap: 150px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    .box-image {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .box-text {
+        width: 90%;
+        max-width: 400px;
+    }
+}
