@@ -26,9 +26,9 @@ export default function Home () {
                 <section className="card-component-container" >
                     <h2 className="h2-title">the content</h2>
                     <div className="card-section-container">
-                        <Card imgSrc="/saga.webp" buttonContent="Saga" link="/saga"></Card>
-                        <Card imgSrc="/animation.webp" buttonContent="Animations" link="/animations" ></Card>
-                        <Card imgSrc="/curiosities.webp" buttonContent="Curiosities" link="/curiosities"></Card>
+                        <Card imgSrc="/saga.webp" buttonContent="Saga" link="/saga" alt="Obi Wan Lightsaber picture"></Card>
+                        <Card imgSrc="/animation.webp" buttonContent="Animations" link="/animations" alt="The Clone Wars poster"></Card>
+                        <Card imgSrc="/curiosities.webp" buttonContent="Curiosities" link="/curiosities" alt="R2D2 asto-droid image"></Card>
                     </div>
                 </section>
             </main>
