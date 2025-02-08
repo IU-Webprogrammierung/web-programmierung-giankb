@@ -1,0 +1,13 @@
+.main{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.curiosity-title{
+    font-size: 3.5rem;
+}

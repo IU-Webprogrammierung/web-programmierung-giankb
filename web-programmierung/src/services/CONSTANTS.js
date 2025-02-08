@@ -179,4 +179,50 @@ export const starWarsCharacters = [
 ];
 
 
+export const starWarsCuriosities = [
+    {
+        title: "Star Wars Release Tradition",
+        description: "The Star Wars films were traditionally released in May in the United States, coinciding with George Lucas's birthday on May 14th. The seventh installment was the first to break this tradition.",
+        imgUrl: "/may-4.webp",
+        position: true,
+        alt: "Star Wars release date tradition"
+    },
+    {
+        title: "The Spielberg-Lucas Bet",
+        description: "George Lucas, uncertain about Star Wars' success, made a bet with Steven Spielberg. He offered him 2.5% of the film’s profits in exchange for a small percentage of Spielberg’s 'Close Encounters of the Third Kind.' Star Wars became a massive success, making Spielberg millions from the deal.",
+        imgUrl: "/lucas-spielberg.webp",
+        position: false,
+        alt: "The famous bet between Spielberg and Lucas"
+    },
+    {
+        title: "Carrie Fisher’s Height Adjustment",
+        description: "In many scenes, Carrie Fisher (Princess Leia) had to stand on a box to make up for the 30-centimeter height difference between her and Harrison Ford (Han Solo).",
+        imgUrl: "/solo-organa.webp",
+        position: true,
+        alt: "Carrie Fisher height trick on set"
+    },
+    {
+        title: "Ewan McGregor and Denis Lawson",
+        description: "Ewan McGregor portrays Obi-Wan Kenobi in the prequel trilogy. Twenty years earlier, his uncle, Denis Lawson, played the pilot Wedge Antilles, known as 'Red Two,' in the original films.",
+        imgUrl: "/ewan-uncle.webp",
+        position: false,
+        alt: "Ewan McGregor and Denis Lawson Star Wars connection"
+    },
+    {
+        title: "Samuel L. Jackson’s Purple Lightsaber",
+        description: "The purple lightsaber did not exist in Star Wars lore until Samuel L. Jackson specifically requested one for his character, Mace Windu.",
+        imgUrl: "/Mace_Windu.webp",
+        position: true,
+        alt: "Samuel L. Jackson’s unique purple lightsaber"
+    },
+    {
+        title: "Harrison Ford’s Unexpected Casting",
+        description: "Harrison Ford was not originally cast as Han Solo. He was working as a carpenter when he was asked to read lines with auditioning actors, which eventually led to him landing the role.",
+        imgUrl: "/harrison_ford.webp",
+        position: false,
+        alt: "Harrison Ford’s unexpected Star Wars casting"
+    }
+];
+
+
 
