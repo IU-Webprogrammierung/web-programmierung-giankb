@@ -16,14 +16,17 @@ const router = createBrowserRouter([
     {
         path: "/saga",
         element: <Saga />,
+        errorElement: <ErrorPage />,
     },
     {
         path: "/animations",
         element: <Animations />,
+        errorElement: <ErrorPage />,
     },
     {
         path: "/curiosities",
         element: <Curiosities />,
+        errorElement: <ErrorPage />,
     },
     {
         path: "*",
