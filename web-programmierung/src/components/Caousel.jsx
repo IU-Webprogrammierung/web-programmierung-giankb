@@ -1,9 +1,24 @@
-import React, { useState } from "react";
-import "./Carousel.css"; // Crea un file CSS per lo stile
+import React, {useEffect, useState} from "react";
+import "./Carousel.css";
 
 export default function Carousel ({ films }) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const visibleSlides = 3;
+    const [visibleSlides, setVisibleSlides] = useState(getSlidesCount());
+
+    useEffect(() => {
+        const handleResize = () => {
+            setVisibleSlides(getSlidesCount());
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    function getSlidesCount() {
+        if (window.innerWidth > 1200) return 3;
+        if (window.innerWidth > 1000) return 2;
+        return 1;
+    }
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % films.length);
