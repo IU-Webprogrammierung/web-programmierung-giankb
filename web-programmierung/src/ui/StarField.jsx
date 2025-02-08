@@ -11,8 +11,8 @@ export default function Starfield() {
 
     function getNumberStars() {
         if (window.innerWidth > 1200) return 4500;
-        if (window.innerWidth > 800) return 1500;
-        return 800;
+        if (window.innerWidth > 800) return 500;
+        return 200;
     }
 
     useEffect(() => {
