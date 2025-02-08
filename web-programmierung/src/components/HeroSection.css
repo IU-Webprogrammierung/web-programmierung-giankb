@@ -20,5 +20,33 @@
 }
 
 
+@media screen and (max-width: 800px) {
+
+    .hero-section {
+        height: 30vh;
+    }
+
+    .hero-title{
+        font-size: 22px;
+        margin-bottom: 10px;
+        width: 400px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .hero-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .hero-section {
+        height: 28vh;
+    }
+}
+
 
 

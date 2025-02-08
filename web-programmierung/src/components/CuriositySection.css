@@ -79,7 +79,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
     .curiosity-section-left {
         margin-bottom: 60px;
         align-items: center;
@@ -123,6 +122,75 @@
     .text-right p {
         text-align: justify;
     }
+}
 
 
+@media screen and (max-width: 800px) {
+    .curiosity-section-left {
+        margin-bottom: 40px;
+    }
+
+    .curiosity-image-left {
+        width: 250px;
+    }
+
+    .text-left {
+        padding: 1.5rem 3rem;
+    }
+
+    .text-left h3 {
+        font-size: 20px;
+    }
+
+    .text-left p {
+        font-size: 16px;
+    }
+
+    .curiosity-section-right {
+        margin-bottom: 40px;
+    }
+
+    .curiosity-image-right {
+        width: 250px;
+    }
+
+    .text-right {
+        padding: 1.5rem 3rem;
+    }
+
+    .text-right h3 {
+        font-size: 20px;
+    }
+
+    .text-right p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .text-left {
+        padding: 1rem 2rem;
+    }
+
+    .text-left h3 {
+        font-size: 20px;
+    }
+
+    .text-left p {
+        font-size: 14px;
+    }
+
+
+    .text-right {
+        padding: 1rem 2rem;
+    }
+
+    .text-right h3 {
+        font-size: 20px;
+    }
+
+    .text-right p {
+        font-size: 14px;
+    }
 }

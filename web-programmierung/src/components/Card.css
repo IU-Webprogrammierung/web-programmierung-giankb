@@ -36,6 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    pointer-events: none;
 }
 
 .card-button:hover,
@@ -61,6 +62,7 @@
 .card-container:hover .card-button {
     transform: translate(-50%, 50%);
     opacity: 1;
+    pointer-events: all;
 }
 
 .card-image {
@@ -74,4 +76,31 @@
 .card-link:hover,
 .card-link:focus .card-button{
     opacity: 1;
+    pointer-events: all;
+}
+
+@media screen and (max-width: 1000px) {
+    .card-button {
+        opacity: 1;
+        transform: translate(-50%, 50%);
+        pointer-events: all;
+    }
+
+    .card-container {
+        border-color: #ffe81f;
+    }
+
+    .card-button:hover,
+    .card-button:focus,
+    .card-button:active {
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+    }
+
+    .card-link:focus .card-button {
+        opacity: 1;
+        pointer-events: all;
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+    }
 }
