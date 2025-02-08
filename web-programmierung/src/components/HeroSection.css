@@ -1,0 +1,52 @@
+.hero-section {
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero-title{
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .hero-title{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .hero-section {
+        height: 30vh;
+    }
+
+    .hero-title{
+        font-size: 22px;
+        margin-bottom: 10px;
+        width: 400px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .hero-title{
+        font-size: 20px;
+        margin-bottom: 10px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .hero-section {
+        height: 28vh;
+    }
+}
+
+
+

@@ -1,68 +1,224 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/*
+Desktop Extra Large (larger than 1440px):
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+Title (h1): 36px - 48px
+Body text (body): 22px
+p text (p): 22px
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+Desktop Large (1200px - 1440px):
+Title (h1): 30px - 36px
+Body text (body): 16px - 18px
+p text (p): 14px - 16px
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+Desktop Medium (992px - 1200px):
+Title (h1): 26px - 30px
+Body text (body): 18px
+p text (p): 18px
+
+Desktop Small (768px - 991px):
+Title (h1): 24px - 26px
+Body text(body): 14px
+p text (p): 13px - 14px
+
+Desktop Very Small (smaller than 768px):
+Title (h1): 22px - 24px
+Body text (body): 13px - 14px
+p text (p): 12px - 13px
+
+MAIN COLOR
+#ffe81f
+
+TINTS
+1: #ffea35
+2: #ffed4c
+3: #ffef62
+4: #fff179
+5: #fff48f
+
+SHADES
+1: #e6d11c
+2: #ccba19
+3: #b3a216
+4: #998b13
+5: #807410
+
+
+
+Background COLOR
+#000207
+
+TINTS
+1: #
+2: #
+3: #
+4: #
+5: #
+
+SHADES
+1: #
+2: #
+3: #
+4: #
+5: #
+
+*/
+
+
+* {
+    font-family: sans-serif;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: #ffe81f #000207;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+    font-family: 'Star Wars', sans-serif;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+::-webkit-scrollbar {
+    width: 5px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+::-webkit-scrollbar-track {
+    background: #000207;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffe81f;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000207;
+    overflow: auto;
+}
+
+.hyperspace {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9;
+    transition: opacity 0.5s;
+}
+
+.hyperspace::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+            white 0px,
+            white 2px,
+            transparent 2px,
+            transparent 10px
+    );
+    animation: warp 0.3s linear infinite;
+    transform: scaleY(0);
+    z-index: 9;
+}
+
+@keyframes warp {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(5);
+    }
+}
+
+.hyperspace.active {
+    opacity: 1;
+}
+
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.32);
+    pointer-events: none;
+}
+
+#hyperspace-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: #000207;
+}
+
+
+/* Common css */
+
+.main{
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main-title{
+    font-size: 3.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .main {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .main-title{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .main {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .main-title{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .main {
+        width: 90%;
+        gap: 20px;
+    }
 }

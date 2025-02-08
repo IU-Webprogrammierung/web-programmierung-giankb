@@ -1,0 +1,13 @@
+.carousel-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.carousel-section-container h2 {
+    font-family: 'Star Wars', sans-serif;
+}
+

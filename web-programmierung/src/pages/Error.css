@@ -1,0 +1,42 @@
+.container{
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container h1{
+    margin-bottom: 100px;
+}
+
+.error-span{
+    font-family: 'Star Wars', sans-serif;
+}
+
+.error-link-span{
+    font-family: 'Star Wars', sans-serif;
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+}
+
+
+.error-button{
+    font-family: 'Star Wars', sans-serif;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.error-button:hover,
+.error-button:focus{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}

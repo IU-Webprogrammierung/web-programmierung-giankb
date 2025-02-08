@@ -1,0 +1,46 @@
+
+.nav_bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 10;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 24px;
+    transition: all 0.5s ease;
+    font-family: 'Star Wars', sans-serif;
+}
+
+.nav_link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    right: 0;
+    background: white;
+    transition: width 0.2s ease;
+    -webkit-transition: width 0.5s ease;
+}
+.nav_link:hover::after,
+.nav_link:focus::after,
+.nav_link:active::after {
+    left: 0;
+    width: 100%;
+}
