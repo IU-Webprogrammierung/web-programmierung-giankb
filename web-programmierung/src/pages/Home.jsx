@@ -16,7 +16,7 @@ export default function Home () {
             <Navigation></Navigation>
             <HeroSection title={"A long time ago, in a galaxy far, far away.."} small={"Welcome to the star wars not official page"}></HeroSection>
             <main className="main">
-                <h1 className="home-title">What is star wars</h1>
+                <h1 className="main-title">What is star wars</h1>
                 <Box></Box>
                 <KeySection></KeySection>
                 <h2 className="h2-title">main characters</h2>

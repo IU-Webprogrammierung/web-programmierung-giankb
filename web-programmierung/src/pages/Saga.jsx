@@ -15,7 +15,7 @@ export default function Saga () {
             <Navigation></Navigation>
             <HeroSection title={"The Saga"} small={"Main films"}></HeroSection>
             <main className="main">
-                <h1 className="saga-title">films</h1>
+                <h1 className="main-title">films</h1>
                 {starWarsFilms.map((film, index) => (
                     <FilmSection key={index} film={film} />
                 ))}

@@ -12,7 +12,7 @@ export default function Animations () {
             <Navigation></Navigation>
             <HeroSection title={"The Clone wars"} small={"Great one!"}></HeroSection>
             <main className="main">
-                <h1 className="saga-title">animated &nbsp; Series</h1>
+                <h1 className="main-title">animated &nbsp; Series</h1>
                 {starWarsSeries.map((film, index) => (
                     <FilmSection key={index} film={film}/>
                 ))}
