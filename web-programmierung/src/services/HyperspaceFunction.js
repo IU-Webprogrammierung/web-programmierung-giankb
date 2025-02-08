@@ -5,7 +5,7 @@ export const triggerHyperspaceEffect = (navigate) => (e, path) => {
 
     window.hyperspaceCanvas.current.style.zIndex = "99";
 
-    window.hyperspaceSpeed.current = 35;
+    window.hyperspaceSpeed.current = 30;
 
     setTimeout(() => {
         navigate(path);
